@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#041416" />
+    <script>
+      // Light or dark before the first paint (src/lib/theme.ts takes over once the app loads).
+      (function () {
+        var t;
+        try { t = localStorage.getItem('aurora.theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = 'dark'; // opens dark unless the visitor chose light
+        document.documentElement.setAttribute('data-theme', t);
+        document.documentElement.style.colorScheme = t;
+        if (t === 'light') document.querySelector('meta[name="theme-color"]').setAttribute('content', '#EEF4F3');
+      })();
+    </script>
+    <title>Payworks Revenue Forecast Dashboard | Sales Ops Case Study</title>
+    <meta name="description" content="Interactive dashboard: three years of revenue by rep, team and product, and a 2026 forecast of $29.8M ($27.4M to $32.2M). A case study by Alex Juma." />
+    <meta name="author" content="Alex Juma" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://alexjumaw99.github.io/payworks-aurora-dashboard/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <!-- Link previews (LinkedIn, Facebook, Slack, WhatsApp, iMessage). Image URLs must be absolute. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Payworks Revenue Forecast Dashboard" />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:url" content="https://alexjumaw99.github.io/payworks-aurora-dashboard/" />
+    <meta property="og:title" content="Payworks Revenue Forecast Dashboard" />
+    <meta property="og:description" content="Three years of revenue by rep, team and product, and a 2026 forecast of $29.8M with a tested ±8% range. An interactive case study by Alex Juma." />
+    <meta property="og:image" content="https://alexjumaw99.github.io/payworks-aurora-dashboard/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Payworks revenue forecast dashboard: a 2026 forecast of $29.8M, a ±8% tested range and 11.8% growth in 2025, beside a 3D map of Canada and the United States." />
+    <!-- X (Twitter) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Payworks Revenue Forecast Dashboard" />
+    <meta name="twitter:description" content="Three years of revenue by rep, team and product, and a 2026 forecast of $29.8M with a tested ±8% range. An interactive case study by Alex Juma." />
+    <meta name="twitter:image" content="https://alexjumaw99.github.io/payworks-aurora-dashboard/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Payworks revenue forecast dashboard: a 2026 forecast of $29.8M, a ±8% tested range and 11.8% growth in 2025, beside a 3D map of Canada and the United States." />
+
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Payworks Revenue Forecast Dashboard",
+        "url": "https://alexjumaw99.github.io/payworks-aurora-dashboard/",
+        "description": "Interactive dashboard of three years of revenue by sales rep, team and product across Canada and the United States, with a 2026 revenue forecast of $29.8M ($27.4M to $32.2M).",
+        "image": "https://alexjumaw99.github.io/payworks-aurora-dashboard/og-image.jpg",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any (web browser)",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "datePublished": "2026-11-16",
+        "keywords": "revenue forecast, sales dashboard, sales operations, data visualization, Payworks, case study",
+        "author": { "@type": "Person", "name": "Alex Juma", "url": "https://github.com/AlexJumaW99" }
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CgNHUWW2.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-COiEfhsA.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-PXY-qgBR.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>Payworks Revenue Forecast Dashboard</h1>
+      <p>An interactive sales operations case study by Alex Juma: three years of revenue for 123 sales reps,
+        five products and two countries (Canada and the United States), and a 2026 revenue forecast of about
+        $29.8M, in a range of $27.4M to $32.2M.</p>
+      <p>The dashboard needs JavaScript. The written analysis is available as a PDF:
+        <a href="./docs/payworks-revenue-forecast-report.pdf">Payworks revenue forecast report</a>.</p>
+    </noscript>
+  </body>
+</html>
